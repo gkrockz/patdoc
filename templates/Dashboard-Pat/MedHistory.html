@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical History</title>
+    <link rel="stylesheet" href="../../static/css/Style5.css">
+    <link rel="icon" type="image/gif" href="../../assets/favicon.png">
+
+    <!-- CDN Links -->
+    <link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" /> <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div>
+        <nav class="navbar navbar-light bg-light">
+            <span class="navbar-brand h1">PatDoc </span>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./Dashboard.html">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Rewards.html">Rewards</a>
+                </li>
+                <li class="nav-item">
+                    <div>
+                        <button class="btn btn-secondary" type="button">Logout</button>
+                    </div>
+                </li>
+            </ul>
+
+        </nav>
+    </div>
+    <div class="container">
+        <table style="margin-top: 2%;" class="table table-bordered">
+            <thead class="thead-dark">
+            <tr>
+                <th colspan="4">
+                    <h2><span>Patient </span> Medical History</h2>
+                </th>
+            </tr>
+            </thead>
+            <tr>
+                <th>Patient Name</th>
+                <td>Thor</td>
+                <th>Patient Email</th>
+                <td>thor@gmail.com</td>
+            </tr>
+            <tr>
+                <th>Patient Mobile Number</th>
+                <td>9273483648</td>
+                <th>Patient Address</th>
+                <td>Byron Bay, Australia</td>
+            </tr>
+            <tr>
+                <th>Patient Gender</th>
+                <td>Male</td>
+                <th>Patient DOB</th>
+                <td>11/08/1983</td>
+            </tr>
+            <tr>
+            <tr>
+                <th>Patient Height</th>
+                <td>6 feet, 6 inches</td>
+                <th>Patient Weight</th>
+                <td>91 kg</td>
+            </tr>
+
+            <th>Patient Medical History(if any)</th>
+            <td>NIL</td>
+            <th>Blood group</th>
+            <td>A +Ve</td>
+            </tr>
+            <tr>
+                <th>Patient Reg Date</th>
+                <td>01/03/2021</td>
+            </tr>
+
+        </table>
+
+        <table id="datatable" class="table table-bordered dt-responsive nowrap"
+            style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+            <thead class="thead-dark">
+            <tr>
+                <th colspan="8">Medical History</th>
+            </tr>
+            <tr>
+                <th>#</th>
+                <th>Blood Pressure</th>
+                <th>Weight</th>
+                <th>Blood Sugar</th>
+                <th>Body Temprature</th>
+                <th>Medical Prescription</th>
+                <th>Visit Date</th>
+
+            </tr>
+        </thead>
+            <tr>
+                <td>1</td>
+                <td>110 mm Hg</td>
+                <td>90 kg</td>
+                <td>130mg/dL</td>
+                <td>95 F</td>
+                <td>NIL</td>
+                <td>20/03/2021</td>
+            </tr>
+
+        </table>
+    </div>
+<!-- End -->
+</body>
+
+</html>

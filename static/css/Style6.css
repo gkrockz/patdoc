@@ -1,0 +1,219 @@
+/***********************************************************************
+ * Body Elements                                                       *
+ **********************************************************************/
+ body
+ {
+     background:#a3d2ca !important;
+     font-family:'Raleway',Helvetica,sans-serif !important;
+ }
+ /***********************************************************************
+  * Container Elements                                                  *
+  **********************************************************************/
+  .nav-wrapper
+  {
+    background-color:#2d3544 !important;
+    color:white !important;
+  }
+  .nav-link
+  {
+      color:white !important;
+  }
+  .cont1
+ {
+     padding: 2rem;
+     color: rgba(0, 0, 0, .8);
+ }
+ .cont2
+ {
+     margin-top: 1rem;
+ }
+ .cont3
+ {
+     margin-top: 1rem;
+     margin-bottom: 1rem;
+ }
+ /***********************************************************************
+  * Wrapper Elements                                                   *
+  **********************************************************************/
+ .form-wrapper
+ {
+     max-width: 30em;
+     margin-right: auto;
+     margin-left: auto;
+     background-color: white;
+     box-shadow: 2px 2px 8px 0px rgba( 0, 0, 0, 0.2 ); 
+     border-radius:6px;
+     padding: 30px;
+ }
+ .fs-wrapper
+ {
+     border-style: solid;
+     border-width: 1px;
+     border-color: transparent;
+     padding-left: 0;
+     padding-right: 0;
+     margin-left: 0;
+     margin-right: 0;
+ }
+ .legend-wrapper
+ {
+     font-size: 1.75rem;
+     font-weight: 600;
+     padding-left: 0;
+     text-align: center;
+     padding-right: 0;
+     margin-left: 0;
+     margin-right: 0;
+ }
+ /***********************************************************************
+  * Input Elements                                                      *
+  **********************************************************************/
+ .inp1
+ {
+     padding: .5rem;
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     border-style: solid;
+     border-width: 1px;
+     width: 97%;
+     background-color: transparent;
+ 
+ }
+ .inp1:hover
+ {
+     background-color:white;
+     color:black;
+ }
+ 
+ .inp2
+ {
+     padding: .5rem;
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     border-style: solid;
+     font-weight: bold;
+     border-width: 1px;
+     width: 97%;
+     background-color: transparent;
+ }
+ .inp2:hover
+ {
+     background-color:white;
+     color:black;
+ }
+ 
+ .inp3
+ {
+    padding: .5rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-style: solid;
+    font-weight: bold;
+    border-width: 1px;
+    width: 97%;
+    height:200px;
+    background-color: transparent;
+
+ }
+ .inp3:hover
+ {
+     background-color:white;
+     color:black;
+ }
+ .lbl
+ {
+     display: block;
+     line-height: 1.5;
+     font-size: .875rem;
+     font-weight: 600;
+ }
+ .lbl2:hover
+ {
+     cursor: pointer;
+ }
+ .gen
+{
+    margin-top:1em;
+}
+ /***********************************************************************
+  * Href Elements                                                       *
+  **********************************************************************/
+  .href1
+ {
+     font-size: .875rem;
+     text-decoration: none;
+     transition: color .15s ease-in;
+     opacity: 1;
+     color: #000;
+     transition: opacity .15s ease-in;
+     display: block;
+     
+ }
+ .href1:hover
+ {
+     color: #0c6ab8;
+ }
+ .href2
+ {
+     font-size: 1rem;
+     color:cornflowerblue;
+     text-decoration: none;
+     transition: color .15s ease-in;
+     opacity: 1;
+     transition: opacity .15s ease-in;
+     display:block;
+ }
+ .href2:hover
+ {
+     color:#0c6ab8;
+ }
+ .target1
+ {
+     line-height: 1.5;
+     margin-top: 1rem;
+ }
+ .signup
+ {
+     outline:none;
+     display: inline-flex;
+     font-weight: bold;
+ }
+ .signin
+ {
+     display: flex;
+     margin-top: 1rem;
+     margin-bottom: 1rem;
+     justify-content: center;
+ }
+ /***********************************************************************
+  * Button Elements                                                     *
+  **********************************************************************/
+ .btn1
+ {
+     font-weight: bold;
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     font-size: .875rem;
+     padding-left: 1rem;
+     padding-right: 1rem;
+     background-color: transparent;
+     padding-top: .5rem;
+     padding-bottom: .5rem;
+     display: inline-block;
+     border-color: #000;
+     border-style: solid;
+     border-width: 1px;
+     -moz-osx-font-smoothing: grayscale;
+     backface-visibility: hidden;
+     transform: translateZ(0);
+     transition: transform .25s ease-out;
+ }
+ .btn1:hover
+ {
+     cursor: pointer;
+     transform: scale(1.05);
+     background-color: cadetblue;
+ }
+ /***********************************************************************
+  * Responsive Media Queries - Yet To Be Added                          *
+  **********************************************************************/

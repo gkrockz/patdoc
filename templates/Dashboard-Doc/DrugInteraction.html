@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drug Interaction</title>
+    <link rel="stylesheet" href="../../static/css/Style7.css">
+    <link rel="icon" type="image/gif" href="../../assets/favicon.png">
+
+    <!-- CDN Links -->
+    <link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" /> <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--Navbar-->
+    <div>
+        <nav class="navbar navbar-light bg-light">
+            <span class="navbar-brand h1">PatDoc</span>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./Dashboard.html">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Rewards.html">Rewards</a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary" type="button">Logout</button>
+                    </div>
+                </li>
+            </ul>
+
+        </nav>
+    </div>
+    <!----->
+    <main>
+        <form class="container">
+
+            <legend style="text-align: left; padding-top:  2%; padding-bottom:1%;">Drug <span
+                    style="color: blue;">Interaction</span></legend>
+            <div class="form-row">
+
+                <div class="form-group col-md-12">
+                    <label for="inputDrug1""><b>First Drug (RXCUI)</b></label>
+                    <input type="text" class="form-control" id="drug1">
+                </div>
+                <div class="form-group col-md-12">
+                    <label for="inputDrug2"><b>Second Drug (RXCUI)</b></label>
+                    <input type="text" class="form-control" id="drug2">
+                    <small id="" class="form-text text-muted" style="margin-top:10px;">DISCLAIMER: The information contained herein should NOT be
+                        used as a substitute for the advise of an appropriately qualified and licensed physician or
+                        other health care provider. PatDoc uses APIs for this tool and it is for informational purpose.
+                        This tool may not cover all possible drug interactions. </small>
+                        <br>
+                        <span class="info" id="info">
+                            <small class="text-muted"><b>Note: </b> This is an Experimental Feature,For now You can't search the drug interactions with the Drug name, Instead you can search with <code><a href="https://mor.nlm.nih.gov/download/rxnav/InteractionAPIs.html">Rxcui Id</a></code> Provided by the API. &nbsp; For example , Try with the interactions between Two RXCUI's <code>207106</code> And <code>152923</code>. &nbsp; we are currently working on this feature to search Drug interactions with Medicine name, instead of <code>RXCUI Id</code></small>
+                        </span>
+                </div>
+
+                <div>
+                    <button type="button" class="btn btn-primary" onclick="getInteraction()">Check Interaction</button>
+                </div>
+            </div>
+           
+            <div class="interaction">
+                <p id="srcname"></p>
+                <p id="desc"></p>
+                <p id="sev"></p>
+                <p id="comment"></p>
+            </div>
+<script src="../../static/js/Script8.js"></script>            
+</body>
+
+</html>

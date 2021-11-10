@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient | EditProfile</title>
+    <link rel="stylesheet" href="../../static/css/Style11.css">
+    <link rel="icon" type="image/gif" href="../../assets/favicon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" /> <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+
+<body style="background-color:#d0e8f2!important">
+    <!-- Top Navbar-->
+    <div class="cont-1">
+        <nav class="navbar navbar-light bg-light top-nav">
+            <span class="navbar-brand h1 ">PatDoc</span>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./Dashboard.html">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Rewards.html">Rewards</a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="btn btn-secondary" href="../../Index.html">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container" id="page-content">
+        <div class="padding">
+            <div class="row container d-flex justify-content-center">
+                <div class="col-xl-12 col-md-12">
+                    <div class="card user-card-full">
+                        <div class="row m-l-0 m-r-0">
+                            <div class="col-sm-4 bg-c-lite-green user-profile">
+                                <div class="card-block text-center text-white">
+
+                                    <h3 class="f-w-600">PatDoc |<span style="color: blue;"> Profile</span> </h3>
+                                    <div class="zoom">
+                                        <img src="" id="avtr" height="100" width="100" alt="Loading Profile...">
+                                    </div>    
+                                </div>
+                            </div>
+
+                            <div class="col-sm-8">
+                                <div class="card-block">
+                                    <form role="form" name="edit" method="post">
+                                        <h6 class="m-b-20 p-b-5 b-b-default f-w-600">Information</h6>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <p class="m-b-10 f-w-600">Name</p>
+                                                <input type="text" name="fname" id="name" class="form-control" value="" readonly>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <p class="m-b-10 f-w-600">Email</p>
+                                                <input type="email" id="email" name="uemail" class="form-control"
+                                                    readonly="readonly" value="">
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <p class="m-b-10 f-w-600">Phone</p>
+                                                <input type="text" name="phone" id="phno" class="form-control" required="required"
+                                                    value="">
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <p class="m-b-10 f-w-600">Gender</p>
+                                                <select name="gender" id="gen" class="form-control" required="required">
+                                                    <option value=""></option>
+                                                    <option value="male">Male</option>
+                                                    <option value="female">Female</option>
+                                                    <option value="other">Other</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <p class="m-b-10 f-w-600">City</p>
+                                                <input type="text" name="city" id="city" class="form-control" required="required"
+                                                    value="">
+                                            </div>
+
+                                            <div class="col-sm-6">
+                                                <p class="m-b-10 f-w-600">Address</p>
+                                                <input type="text" name="address" class="form-control"
+                                                    required="required" value="">
+                                            </div>
+
+                                        </div>
+                                        <h6 class="m-b-20 m-t-40 p-b-5 b-b-default f-w-600"></h6>
+                                        <div class="row">
+
+                                            <div>
+                                                <button class="btn btn-primary" type="submit"
+                                                    name="submit">Update</button>
+                                                <a href="#" class="btn btn-warning">Change
+                                                    Password</a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer" style="text-align: center;padding-top: 5%; padding-bottom: 1%;">
+            </div>
+        </div>
+    </div>
+    <script src="../../static/js/Script9.js"></script>
+
+</body>
+
+</html>

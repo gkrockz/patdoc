@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment History</title>
+    <link rel="stylesheet" href="../../static/css/Style5.css">
+    <link rel="icon" type="image/gif" href="../../assets/favicon.png">
+
+    <!-- CDN Links -->
+    <link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Top Navbar-->
+    <div>
+        <nav class="navbar navbar-light bg-light top-nav">
+            <span class="navbar-brand h1 ">PatDoc</span>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./Dashboard.html">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Rewards.html">Rewards</a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary" type="button">Logout</button>
+                    </div>
+                </li>
+            </ul>
+
+        </nav>
+    </div>
+
+    <!-- Header -->
+    <section id="page-title">
+        <div style="padding: 2%;">
+            <h2>Patient | Appointment History</h2>
+        </div>
+    </section>
+
+    <!-- content -->
+    <section style="padding: 2%;">
+        <div class="table-responsive table-bordered">
+            <table class="table table-hover">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>serial #</th>
+                        <th>Doctor Name</th>
+                        <th>Specialization</th>
+                        <th>Appointment Date & Time</th>
+                        <th>Appointment Creation Date</th>
+                        <th>Consultancy Fee</th>
+                        <th>Action</th>
+                        <th>Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Mr.Groot</td>
+                        <td>General Physician</td>
+                        <td>20/03/2021 10:30 AM</td>
+                        <td>15/03/2021</td>
+                        <td>500 &#8377;</td>
+                        <td><a href="#">Cancel</a>
+                        <td><a href="./Rate.html">Rate Doctor</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <!-- End -->
+</body>
+
+</html>

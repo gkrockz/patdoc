@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Rewards FAQ</title>
+  <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+  <link rel="stylesheet" href="../static/css/Style10.css">
+  <link rel="icon" type="image/gif" href="../assets/favicon.png">
+</head>
+<body style="background-color:#d3e0dc;">
+
+<div class="container">
+
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="accordion">
+    <div class="accordion-item">
+      <a>What are Pacos ?</a>
+      <div class="content">
+        <p>Pocos enables patients to earn points after some appointments and exchange points to a free appointment</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <a>What are Docos ?</a>
+      <div class="content">
+        <p>Docos enables doctors to earn points by feedback  of patients  and exchange points to premium doctor accounts that puts him/her on the top of doctor’s list in his/her specialized area and AMS will suggests him/her to the patients.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <a>Can we get money using Docos/Pacos ? </a>
+      <div class="content">
+        <p>No It Doesn't Work that way, instead it acts as a system by which you can exchange the Rewards for free appointments (For patients) / Increase overall rating(For Doctors).</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <a>How to earn more Pacos / Docos </a>
+      <div class="content">
+        <p>The Way for earning more Rewards is common to both Doctors and Patients, Which is by taking more appointments. For each appointment that the doctor/ patient take they will get 10 Docos/Pacos Respectively. And there is no referral system as of now to earn Rewards throught that.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <a>What if the Redemption System fails while redeeming Docos/Pacos ? </a>
+      <div class="content">
+        <p>There wont be any issues with the Redemption system, In case of any bugs with the Redemption system, The redeemed Docos/Pacos will be refunded back with 24 Hours. And moreover we will store all the Redemption history in our database(Both Successful/ Failure Redemption). </p>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+<script>
+const items = document.querySelectorAll(".accordion a");
+ 
+function toggleAccordion(){
+  this.classList.toggle('active');
+  this.nextElementSibling.classList.toggle('active');
+}
+ 
+items.forEach(item => item.addEventListener('click', toggleAccordion));
+</script>
+</body>
+</html>

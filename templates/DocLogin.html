@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor Login</title>
+  <link rel="stylesheet" href="../static/css/Style3.css">
+  <link rel="icon" type="image/gif" href="../assets/favicon.png">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- Form -->
+  <h1 class="header">Doctor Login | <span>PatDoc</span></h1>
+  <main class="cont1">
+    <form method="POST" class="form-wrapper">
+      <fieldset class="fs-wrapper">
+        <legend class="legend-wrapper">Sign In To Your Account</legend>
+        <div class="cont2">
+          <label class="lbl1" for="email"><b>Email</b></label>
+          <input class="inp1" type="email" name="email" id="email">
+        </div>
+        <div class="cont3">
+          <label class="lbl1" for="password"><b>Password</b></label>
+          <input class="inp2" type="password" name="pass" id="pass" required>
+        </div>
+        <label class="lbl2"><a href="../templates/ForgotPass.html" class="href1">Forgot your password?</a></label>
+      </fieldset>
+      <div class="signin">
+        <input class="btn1" type="button" onclick="signIn()" value="Sign in">
+      </div>
+      <hr id="wrapper">
+      <div class="target1">
+        <p class="signup">Don't Have An Account Yet?<a href="../templates/DocSignUp.html" class="href2">&nbsp; Sign up</a>&nbsp; | &nbsp; <a href="../Index.html" class="href2">Home </a></p>
+        <p class="footer">© PatDoc 2021. All rights reserved</p>
+      </div>
+    </form>
+  </main>
+  <!-- End -->
+  <script src="../static/js/Script1.js"></script>
+</body>
+
+</html>
